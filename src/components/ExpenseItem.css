@@ -1,14 +1,11 @@
 
-.expense-item {
-    color: #faf4f4;
+  .expense-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    padding: .4rem;
-    margin: .2rem 0;
-    border-radius: 4px;
-    background-color: #020707;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: #16739e;
   }
   
   .expense-item__description {
@@ -22,36 +19,59 @@
   }
   
   .expense-item h2 {
-    color: #faf4f4;
+    
     font-size: 1rem;
     flex: 1;
-    margin: 0.5rem;
-    
+    margin: 0 1rem;
+    color: white;
   }
   
   .expense-item__price {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
     color: white;
-    background-color: #24a4bba6;
-    border: 1px solid rgb(247, 243, 243);
-    margin: 0.1rem 0;
-    padding: 0.3rem;
-    border-radius: 5px;
+    background-color: #40005d;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 12px;
+  }
+  
+  .expense-card {
+    
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
   }
 
-  .expense-item__date {
-    align-items: flex-end;
-    
-    font-size: 0.8rem;
-    font-weight: bold;
+  
+  
+
+  .expense-date {
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid #ececec;
+    background-color: #2a2a2a;
     color: white;
-    background-color: #de0df1a6;
-    border: 1px solid rgb(247, 243, 243);
-    margin: 0.1rem 0;
-    padding: 0.5rem;
-    border-radius: 5px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .expense-date__month {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .expense-date__year {
+    font-size: 0.75rem;
+  }
+  
+  .expense-date__day {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
   
   @media (min-width: 580px) {
     .expense-item__description {
