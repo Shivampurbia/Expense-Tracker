@@ -53,8 +53,9 @@ function App() {
   console.log(filteredYear);
 
       
- 
+  
 
+  
 
   
   
@@ -71,7 +72,20 @@ function App() {
       <h1>Expense Tracker</h1>
       <NewExpense onAddExpense={addExpenseHandler}/>
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-      <ExpenseList items = {filteredExpenses}/>
+      {filteredYear==='Total'?
+        expenses.map((expense) => (
+          <ExpenseItem
+            key={expense.id}
+            title={expense.title}
+            amount={expense.amount}
+            date={expense.date}
+          />
+        )) 
+        :
+        <ExpenseList items = {filteredExpenses}/>}
+
+    }
+      
 
       
       
