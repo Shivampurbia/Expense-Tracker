@@ -1,12 +1,12 @@
-### 'Live Demo'
+# 'Live Demo'
 
 Open [https://mystifying-wozniak-d9aff7.netlify.app](https://mystifying-wozniak-d9aff7.netlify.app)
 
-# Getting Started with Create React App
+## Getting Started with React with Udemy's Best Course
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Get Started with Component, Props, State, Styling and many more about ReactJS
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
