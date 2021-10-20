@@ -1,5 +1,5 @@
 # Live Demo
-[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://mystifying-wozniak-d9aff7.netlify.app)
+[![Live Demo](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://mystifying-wozniak-d9aff7.netlify.app)
 
 
 
