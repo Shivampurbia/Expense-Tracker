@@ -5,6 +5,7 @@ import ExpensesFilter from './ExpensesFilter';
 import NewExpense from './components/NewExpenses/NewExpense';
 import ExpenseList from './components/ExpenseList';
 import ExpenseItem from './components/Expense';
+import './components/ExpenseList.css';
 
 import ExpensesChart from './components/ExpensesChart';
 
@@ -67,7 +68,8 @@ function App() {
     
     setIsClicked(wasOpened => !wasOpened);
   }
-
+  
+  
 
 
   
@@ -97,10 +99,13 @@ function App() {
       </div>  
       
       
-
+      
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
+
       {filteredYear==='Total'?
+        
         expenses.map((expense) => (
+          
           <ExpenseItem
             key={expense.id}
             title={expense.title}
@@ -109,7 +114,10 @@ function App() {
           />
         )) 
         :
-        <ExpenseList items = {filteredExpenses}/>}
+        <div>
+        <ExpensesChart expenses={filteredExpenses} />
+        <ExpenseList items = {filteredExpenses}/>
+        </div>}
     </Card>
   );
 }
