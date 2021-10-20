@@ -20,18 +20,22 @@ body {
 
 .new-expense__button{
   font: inherit;
-  align-items: ;
+  
   cursor: pointer;
   padding: 1rem 2rem;
-  border: 1px solid #40005d;
-  background-color: #40005d;
+  border: 1px  #f2edf5;
+  background-color: #08020a;
   color: white;
   border-radius: 12px;
   margin-right: 1rem;
-  
-  
-  
 }
+.new-expense__button:hover,
+.new-expense__button:active {
+    background-color: #161218;
+    border-color: #e8e1eb;
+  }
+
+
 .expenses {
   padding: 1rem;
   background-color: rgb(39, 38, 38);

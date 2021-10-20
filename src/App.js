@@ -6,6 +6,8 @@ import NewExpense from './components/NewExpenses/NewExpense';
 import ExpenseList from './components/ExpenseList';
 import ExpenseItem from './components/Expense';
 
+import ExpensesChart from './components/ExpensesChart';
+
 const initial_expenses = [
   {
     id: 'e1',
@@ -52,8 +54,16 @@ function App() {
   console.log(filteredYear);
 
   const [isClicked, setIsClicked] = useState(false);
-
+  const [buttonTitle, setButtonTitle] = useState("Add Expense");
   function toggle() {
+
+    let currentTitle = buttonTitle;
+    if (currentTitle ==="Add Expense"){
+      setButtonTitle(buttonTitle =>"Back");
+    }
+    if (currentTitle ==="Back"){
+      setButtonTitle(buttonTitle =>"Add Expense");
+    }
     
     setIsClicked(wasOpened => !wasOpened);
   }
@@ -80,11 +90,13 @@ function App() {
   return (
     <Card className="expenses">
       <h1>Expense Tracker</h1>
+      {isClicked && <NewExpense onAddExpense={addExpenseHandler}/>}  
       
       <div className="center">  
-        <button onClick={toggle} className="new-expense__button" >Add Expense</button>
-        {isClicked && <NewExpense onAddExpense={addExpenseHandler}/>}
+        <button onClick={toggle} className="new-expense__button" >{buttonTitle}</button>
       </div>  
+      
+      
 
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
       {filteredYear==='Total'?

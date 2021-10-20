@@ -5,7 +5,8 @@ const ExpenseFrom = (props) =>{
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
-
+    
+    
     const titleChangeHandler = (event) => {
         setEnteredTitle(event.target.value);
     };
@@ -63,11 +64,13 @@ const ExpenseFrom = (props) =>{
                     onChange={dateChangeHandler}/>
             </div>
         </div>
+        
         <div className="new-expense__actions">
+            
             <button type="submit">Add Expense</button>
         </div>
     </form>
-    </div>);
+    </div>); 
 };
 
 export default ExpenseFrom;
