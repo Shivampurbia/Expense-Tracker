@@ -5,7 +5,7 @@
 
 ## Getting Started with React with Udemy's Best Course
 
-Get Started with Component, Props, State, Styling and many more about ReactJS
+Learn about Component, Props, State, Styling and many more about ReactJS
 
 ### Available Scripts
 
