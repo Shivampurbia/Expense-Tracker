@@ -1,5 +1,5 @@
 # Live Demo
-
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mystifying-wozniak-d9aff7.netlify.app)
 Open [https://mystifying-wozniak-d9aff7.netlify.app](https://mystifying-wozniak-d9aff7.netlify.app)
 
 ## Getting Started with React with Udemy's Best Course
