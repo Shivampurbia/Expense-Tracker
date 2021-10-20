@@ -1,6 +1,6 @@
 # Live Demo
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)(https://mystifying-wozniak-d9aff7.netlify.app)
-
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React](https://mystifying-wozniak-d9aff7.netlify.app)
 
 ## Getting Started with React with Udemy's Best Course
 
