@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './index.css'
-
 import Card from './components/Card';
 import ExpensesFilter from './ExpensesFilter';
 import NewExpense from './components/NewExpenses/NewExpense';
@@ -52,6 +51,18 @@ function App() {
   });
   console.log(filteredYear);
 
+  const [isClicked, setIsClicked] = useState(false);
+
+  function toggle() {
+    
+    setIsClicked(wasOpened => !wasOpened);
+  }
+
+
+
+  
+   
+
       
   
 
@@ -68,9 +79,13 @@ function App() {
 
   return (
     <Card className="expenses">
-      
       <h1>Expense Tracker</h1>
-      <NewExpense onAddExpense={addExpenseHandler}/>
+      
+      <div className="center">  
+        <button onClick={toggle} className="new-expense__button" >Add Expense</button>
+        {isClicked && <NewExpense onAddExpense={addExpenseHandler}/>}
+      </div>  
+
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
       {filteredYear==='Total'?
         expenses.map((expense) => (
@@ -83,14 +98,6 @@ function App() {
         )) 
         :
         <ExpenseList items = {filteredExpenses}/>}
-
-    }
-      
-
-      
-      
-      
-      
     </Card>
   );
 }

@@ -8,6 +8,30 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } 
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+
+.new-expense__button{
+  font: inherit;
+  align-items: ;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
+  
+  
+  
+}
 .expenses {
   padding: 1rem;
   background-color: rgb(39, 38, 38);
